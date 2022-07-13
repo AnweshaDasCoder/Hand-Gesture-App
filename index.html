@@ -1,0 +1,65 @@
+
+ 
+<html>
+    <head>
+      <title>Hand Gesture</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+          <a class="article" href="https://teachablemachine.withgoogle.com/models/ps-6C6KM_/" target="_blank">This is the hand gestures project model link</a>  
+        <div>
+          <h3 class="btn btn-warning> heading">
+          HAND GESTURE APP
+        </div>
+          <h2>TAKE A SELFIE WITH THE HAND GESTURE TO KNOW ITS MEANING</h2>
+          
+          <p>This app is trained to know the meaning of the following hand gesture:</p>
+          <br>
+          <span>&#128076;</span>
+          <span>&#128077;</span>
+          <span>&#9996;</span>
+          <span>&#128078;</span>
+        </h3> 
+  
+        <br><br>
+  
+        
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+  <label>WEBCAM VIEW - </label>
+  <div id="camera">
+  </div>
+  <br>
+  <button onclick="take_snapshot();" class="btn btn-warning">CAPTURE IMAGE</button>
+        </div>
+
+        <label>PREDICTION - </label>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>SNAPSHOT - </label>
+            <div id="hello">
+            </div>
+          <br>
+          <button onclick="Prediction();" class="btn btn-warning">PREDICT HANDGESTURE</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
